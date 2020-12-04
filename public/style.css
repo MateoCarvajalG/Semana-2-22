@@ -1,0 +1,54 @@
+
+.section-title {
+    font-family: 'Arial Narrow';
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(181, 210, 243);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial Narrow';
+}
+
+.navbar-brand{
+    font-family: 'Arial Narrow';
+    display: left;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid blue;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .imag{
+        width: 100%;
+    }
+    
+
+}

@@ -1,8 +1,17 @@
 <template>
     <div id="clima">
+        <input type="text" class="form-control mt-5" v-model="ubicacion" v-on:keyup.enter="getText">
+            <button v-on:click="getText">Mostrar clima</button>
+                <!-- <pre>{{$data}}</pre> -->
         <div id="weatherContainer">
+            
             <div id='weatherContainer__temperatura'> 
-                <button @click="findMe()">Mostrar clima</button>
+                
+                
+                <h2>Ciudad: {{resultJson.name}}, {{resultJson.sys.country}}.</h2>
+                <h2>La temperatura es de {{resultJson.main.temp}} °C</h2>
+                <h2>Sensacion Termica {{resultJson.main.feels_like}}</h2>
+                <h2>La presion es {{resultJson.main.pressure}} hPa</h2>
             </div>
             <div></div>
             <div></div>
@@ -18,82 +27,41 @@ export default {
   props: {
     msg: String
   },
-
   data(){
       return{
-        resultJson : []
+        ubicacion : '',
+        resultJson: null
       }
   },
-
-  methods : {
-    
-    findMe(){
-
-        var output = document.getElementById("clima");
-        if (!navigator.geolocation) {
-        output.innerHTML = "<p>Tu navegador no soporta geolocalizacion</p>";
-        } 
-
-
-        function localizacion(posicion) {
-        const lat = posicion.coords.latitude;
-        const lon = posicion.coords.longitude;
-        console.log(lat);
-        console.log(lon);
-        apiWeather(lat,lon);
-
-        }
-        function error() {
-        output.innerHTML = "<p>No se pudo obtener tu ubicacion</p>";
-        }
-
-
-        async function  apiWeather(latitude,longitude){
-        const result =  await fetch ( `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=725c3e54a024870fec08bf0537d47a9c&units=metric`,{
+    mounted: async function(){
+        
+        const result =  await fetch ( `http://api.openweathermap.org/data/2.5/weather?q=bogota&appid=725c3e54a024870fec08bf0537d47a9c&units=metric`,{
         method :'GET',
         })
-
-        let resultJson = await result.json()
-
+        this.resultJson = await result.json()
         if (result.ok){
-        console.log(resultJson);
-        // console.log(resultJson.main.temp);
-        printOnScreen(resultJson);
+        console.log(this.resultJson);
         }
-        }
-
-        function printOnScreen(dataText){
-           const weatherContainer = document.getElementById('weatherContainer__temperatura')
-
-
-            const {name,main,weather,wind,sys} = dataText
-            console.log(name,main,weather,wind);
-
-            
-            
-            const city = document.createElement('h2');
-            city.textContent = 'Su ciudad es  '+name +', '+sys.country+'.';
-
-            const temp = document.createElement('h3')
-            temp.textContent = 'La temperatura es: '+ main.temp + ' °C';
-
-            
-            weatherContainer.appendChild(city);
-            weatherContainer.appendChild(temp);     
-        }
-
-
-        navigator.geolocation.getCurrentPosition(localizacion, error);
+        
     },
+  
+  methods : {
 
-
-
-
-    
-
-
-
-  },
+      getText: async function(){
+        console.log(this.ubicacion)
+        
+        const result =  await fetch ( `http://api.openweathermap.org/data/2.5/weather?q=${this.ubicacion}&appid=725c3e54a024870fec08bf0537d47a9c&units=metric`,{
+        method :'GET',
+        })
+        this.resultJson = await result.json()
+        if (result.ok){
+        console.log(this.resultJson);
+        }
+        
+      
+      
+    }
+  }
 }
 </script>
 

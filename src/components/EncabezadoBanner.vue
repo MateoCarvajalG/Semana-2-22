@@ -79,8 +79,8 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>
               <kbd class="text-primary"
-                >Actualizate con lo último en noticias y novedades de tu deporte
-                favorito.</kbd
+                >Actualizate con lo último del clima y busca las condiciones ambientales 
+                de la ciudad de tu interés</kbd
               >
             </h5>
           </div>

@@ -47,10 +47,11 @@
           >
         </div>
       </div>
-      <div id="weatherContainer__temperatura" class="col-lg-6 col-xs-12 border">
+
+      <div id="weatherContainer__" class="col-lg-6 col-xs-12 border">
         <div class="d-flex justify-content-center align-itemscenter">
           <div class="p-2">
-            <h4>Temperatura</h4>
+            <h4>Por definir...</h4>
             <hr />
             <div class="text-justify">
               <h5>
@@ -89,12 +90,12 @@
             <div class="text-justify">
               <h5>Humedad Relativa: {{ resultJson.main.humidity }} %</h5>
               <h5>Velocidad del Viento: {{ resultJson.wind.speed }} mph</h5>
-              <h5>Dirección: {{ resultJson.wind.deg }} grados</h5>
+              <h5>Dirección del Viento: {{ resultJson.wind.deg }} grados</h5>
             </div>
           </div>
           <div class="p-3">
             <img
-              src="../assets/clima.jpg"
+              src="../assets/viento.jpg"
               alt="Imagen de Clima"
               class="img-thumbnail"
               width="300 "
@@ -111,10 +112,11 @@
           >
         </div>
       </div>
-      <div id="weatherContainer__temperatura" class="col-lg-6 col-xs-12 border">
+
+      <div id="weatherContainer__" class="col-lg-6 col-xs-12 border">
         <div class="d-flex justify-content-center align-itemscenter">
           <div class="p-2">
-            <h4>Temperatura</h4>
+            <h4>Por defininr...</h4>
             <hr />
             <div class="text-justify">
               <h5>

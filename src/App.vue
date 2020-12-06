@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>{{ titulo }}</h2>
+    <h2>{{ tituloEquipo }}</h2>
     <div class="card-deck">
       <div class="card"  v-for = "(item , index) of team" :key = "index">
         <TeamCard v-bind:member = "item" /> 
@@ -21,7 +21,7 @@
 
       return{
 
-        titulo : 'EQUIPO',
+        tituloEquipo : 'EQUIPO',
         team: [{
           codigo: 1,
           nombre: 'FRANCISCO ASTUDILLO',

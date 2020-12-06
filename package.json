@@ -28,5 +28,20 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "```\r npm install\r ```",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateoCarvajalG/Semana-2-22.git"
+  },
+  "author": "kpassosg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateoCarvajalG/Semana-2-22/issues"
+  },
+  "homepage": "https://github.com/MateoCarvajalG/Semana-2-22#readme"
 }

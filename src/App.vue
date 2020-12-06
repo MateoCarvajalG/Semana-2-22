@@ -4,6 +4,7 @@
    <encabezado-banner></encabezado-banner>
    <seccion-servicios></seccion-servicios>
   <ApiWeather></ApiWeather>
+  
 
     <h2>{{ tituloEquipo }}</h2>
     <div class="card-deck">
@@ -11,10 +12,13 @@
         <TeamCard v-bind:member = "item" /> 
       </div>
     </div>
+    <pagefooter></pagefooter>
+
   </div>
 </template>
 
 <script>
+import Pagefooter from './components/Pagefooter.vue'
 
 
 import EncabezadoBanner from './components/EncabezadoBanner.vue'
@@ -32,6 +36,7 @@ export default {
     SeccionServicios,
     ApiWeather,
     TeamCard,
+    Pagefooter
 
   },
 
@@ -81,6 +86,7 @@ export default {
         }]
       }
     }
+  
 }
 </script>
 

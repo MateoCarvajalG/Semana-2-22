@@ -49,7 +49,7 @@ export default {
           codigo: 1,
           nombre: 'FRANCISCO ASTUDILLO',
           descripcion: 'Francisco Astudillo, quien actualmente es residente de la ciudad de Cali. Graduado como Ingeniero Ambiental en la Universidad del Valle y por ultimo, pero no menos importante, su deporte favorito es BMX.',
-          rol: 'Desarrollador backend',
+          rol: 'Tester',
           image: "./img/Francisco-Astudillo.jpg"
         },
         
@@ -57,7 +57,7 @@ export default {
           codigo: 2,
           nombre: 'JULIAN JIMENEZ ORTIZ',
           descripcion: 'Julian Jimenez Ortiz, Ingeniero Geologo graduado en la Universidad Nacional de Colombia, actualmente se encuentra viviendo en la ciudad de Florencia, donde aprovecha el tiempo para practicar piano, manejar bicicleta y juagr volley.',
-          rol: 'Desarrollador backend',
+          rol: 'Desarrollador Front-End',
           image: './img/Julian-Jimenez-Ortiz.png'
         },
 
@@ -73,7 +73,7 @@ export default {
           codigo: 4,
           nombre: 'MATEO CARVAJAL',
           descripcion: 'Mateo Carvajal, un amante de los motores y la tecnologia, logro graduarse como Ingeniero Mecatronico de la Universidad de Caldas, ademas de ser tecnologo en mecatronica automotriz con tan solo 25 años.',
-          rol: 'Desarrollador Front-End',
+          rol: 'Desarrollador backend',
           image: './img/Mateo-Carvajal.png'
         },
 
@@ -81,7 +81,7 @@ export default {
           codigo: 5,
           nombre: 'CRISTIAN CABARCAS',
           descripcion: 'Cristian Cabarcas, quien actualmente es residente de la ciudad de Cartagena, se encuentra siguiendo los pasos de sus compañeros para lograr una profesion al igual que ellos, dedicando su tiempo al estudio.',
-          rol: 'Desarrollador backend',
+          rol: 'Arquitecto de Software',
           image: './img/Cristian-Cabarcas.jpg'
         }]
       }
@@ -97,7 +97,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
   .card-deck{
 

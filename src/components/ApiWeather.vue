@@ -1,6 +1,6 @@
 <template>
 
-  <div id="clima" class="container-fluid">
+  <div id="clima" class="container-fluid mt-5" >
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Ingrese la Ciudad</span>

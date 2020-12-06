@@ -60,7 +60,7 @@ export default {
           codigo: 3,
           nombre: 'KEWIN PASSOS G.',
           descripcion: 'Kewin Passos G. graduado de la Universidad Nacional de Colombia como Ingeniero Forestal y que actualmente es residente de la ciudad de Medellin, hoy en dia dedica parte de su tiempo a desarrollar actividades para cumplir la mision MINTIC 2022.',
-          rol: 'Desarrollador backend',
+          rol: 'Desarrollador FullStack',
           image: './img/Kewin-Passos-G.jpg'
         },
 
@@ -68,7 +68,7 @@ export default {
           codigo: 4,
           nombre: 'MATEO CARVAJAL',
           descripcion: 'Mateo Carvajal, un amante de los motores y la tecnologia, logro graduarse como Ingeniero Mecatronico de la Universidad de Caldas, ademas de ser tecnologo en mecatronica automotriz con tan solo 25 años.',
-          rol: 'Desarrollador backend',
+          rol: 'Desarrollador Front-End',
           image: './img/Mateo-Carvajal.png'
         },
 

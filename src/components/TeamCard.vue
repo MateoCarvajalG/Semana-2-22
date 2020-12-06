@@ -1,5 +1,5 @@
 <template>
-    <div class="container">    
+    <div id="team" class="container">    
         <img class="card-img-top member" v-bind:src = member.image alt="Miembro del equipo">
         <div class="card-body">
             <p class="cabecera" style="text-align: center">Team Member<span> {{ member.codigo }}:  {{ member.rol }}</span></p>
